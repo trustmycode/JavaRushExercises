@@ -9,15 +9,20 @@ import java.io.InputStreamReader;
 */
 
 public class Solution {
+
   public static void main(String[] args) throws IOException {
     BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
     int[] arr = getInts(reader);
     int maximum = Integer.MIN_VALUE;
     int minimum = Integer.MAX_VALUE;
     for (int i = 0; i < arr.length; i++) {
-      if (arr[i] < minimum) minimum = arr[i];
+      if (arr[i] < minimum) {
+        minimum = arr[i];
+      }
 
-      if (arr[i] > maximum) maximum = arr[i];
+      if (arr[i] > maximum) {
+        maximum = arr[i];
+      }
     }
 
     // напишите тут ваш код

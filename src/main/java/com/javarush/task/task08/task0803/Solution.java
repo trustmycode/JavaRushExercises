@@ -8,11 +8,12 @@ import java.util.Map;
 */
 
 public class Solution {
+
   public static void main(String... args) throws Exception {
     String[] cats =
-            new String[] {
-                    "васька", "мурка", "дымка", "рыжик", "серый", "снежок", "босс", "борис", "визя", "гарфи"
-            };
+        new String[]{
+            "васька", "мурка", "дымка", "рыжик", "серый", "снежок", "босс", "борис", "визя", "гарфи"
+        };
 
     Map<String, Cat> map = addCatsToMap(cats);
 
@@ -24,7 +25,7 @@ public class Solution {
   public static Map<String, Cat> addCatsToMap(String[] cats) {
     // напишите тут ваш код
     Map<String, Cat> map = new HashMap<>();
-    for(String s: cats) {
+    for (String s : cats) {
       Cat cat = new Cat(s);
       map.put(s, cat);
     }
@@ -32,6 +33,7 @@ public class Solution {
   }
 
   public static class Cat {
+
     String name;
 
     public Cat(String name) {

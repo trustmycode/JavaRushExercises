@@ -10,6 +10,7 @@ import java.util.ArrayList;
 */
 
 public class Solution {
+
   private static ArrayList<String> strings;
 
   public static void main(String[] args) throws IOException {
@@ -27,7 +28,9 @@ public class Solution {
       }
     }
     for (int i = 0; i < strings.size(); i++) {
-      if (strings.get(i).length() == strLength) System.out.println(strings.get(i));
+      if (strings.get(i).length() == strLength) {
+        System.out.println(strings.get(i));
+      }
     }
   }
 }

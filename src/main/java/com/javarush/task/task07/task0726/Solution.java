@@ -10,6 +10,7 @@ import java.util.ArrayList;
 */
 
 public class Solution {
+
   public static final ArrayList<Cat> CATS = new ArrayList<>();
 
   public static void main(String[] args) throws IOException {
@@ -38,10 +39,11 @@ public class Solution {
   }
 
   public static class Cat {
-    private String name;
-    private int age;
-    private int weight;
-    private int tailLength;
+
+    private final String name;
+    private final int age;
+    private final int weight;
+    private final int tailLength;
 
     Cat(String name, int age, int weight, int tailLength) {
       this.name = name;

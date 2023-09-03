@@ -5,11 +5,15 @@ package com.javarush.task.task05.task0513;
 */
 
 public class Rectangle {
+
   // напишите тут ваш код
   public int top;
   public int left;
   public int width;
   public int height;
+
+  public static void main(String[] args) {
+  }
 
   public void initialize(int top, int left) {
     this.top = top;
@@ -36,6 +40,4 @@ public class Rectangle {
     this.width = width;
     this.height = width;
   }
-
-  public static void main(String[] args) {}
 }

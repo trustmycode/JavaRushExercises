@@ -12,18 +12,22 @@ public class Solution {
   }
 
   public static class Duck {
+
     public String toString() {
       return "Duck";
     }
   }
+
   // напишите тут ваш код
   public static class Cat {
+
     public String toString() {
       return "Cat";
     }
   }
 
   public static class Dog {
+
     public String toString() {
       return "Dog";
     }

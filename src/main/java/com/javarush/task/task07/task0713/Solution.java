@@ -9,6 +9,7 @@ import java.util.ArrayList;
 */
 
 public class Solution {
+
   public static void main(String[] args) throws Exception {
     // напишите тут ваш код
     ArrayList<Integer> numsArr = new ArrayList<Integer>();
@@ -20,9 +21,15 @@ public class Solution {
       numsArr.add(Integer.parseInt(reader.readLine()));
     }
     for (int i = 0; i < numsArr.size(); i++) {
-      if (numsArr.get(i) % 3 == 0) numsMod3.add(numsArr.get(i));
-      if (numsArr.get(i) % 2 == 0) numsMod2.add(numsArr.get(i));
-      if (!(numsArr.get(i) % 2 == 0) && !(numsArr.get(i) % 3 == 0)) numsAny.add(numsArr.get(i));
+      if (numsArr.get(i) % 3 == 0) {
+        numsMod3.add(numsArr.get(i));
+      }
+      if (numsArr.get(i) % 2 == 0) {
+        numsMod2.add(numsArr.get(i));
+      }
+      if (!(numsArr.get(i) % 2 == 0) && !(numsArr.get(i) % 3 == 0)) {
+        numsAny.add(numsArr.get(i));
+      }
     }
     printList(numsMod3);
     printList(numsMod2);

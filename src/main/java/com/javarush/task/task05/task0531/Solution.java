@@ -34,7 +34,7 @@ public class Solution {
       return e;
     } else if (a == b && a == c && a == d && a == e) {
       return a;
-    }else {
+    } else {
       return a;
     }
   }

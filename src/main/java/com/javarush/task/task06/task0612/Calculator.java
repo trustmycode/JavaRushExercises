@@ -5,6 +5,7 @@ package com.javarush.task.task06.task0612;
 */
 
 public class Calculator {
+
   public static int plus(int a, int b) {
     // напишите тут ваш код
     return a + b;
@@ -30,5 +31,6 @@ public class Calculator {
     return a * b / 100.0;
   }
 
-  public static void main(String[] args) {}
+  public static void main(String[] args) {
+  }
 }

@@ -5,12 +5,14 @@ package com.javarush.task.task05.task0522;
 */
 
 public class Circle {
+
   public double x;
   public double y;
   public double radius;
 
   // напишите тут ваш код
-  public Circle() {}
+  public Circle() {
+  }
 
   public Circle(int x) {
     this.x = x;

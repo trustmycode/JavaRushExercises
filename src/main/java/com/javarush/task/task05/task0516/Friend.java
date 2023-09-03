@@ -5,8 +5,9 @@ package com.javarush.task.task05.task0516;
 */
 
 public class Friend {
+
   // напишите тут ваш код
-  private String name;
+  private final String name;
   private int age;
   private char sex;
 
@@ -25,5 +26,6 @@ public class Friend {
     this.sex = sex;
   }
 
-  public static void main(String[] args) {}
+  public static void main(String[] args) {
+  }
 }

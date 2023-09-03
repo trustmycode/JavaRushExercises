@@ -5,9 +5,10 @@ package com.javarush.task.task05.task0520;
 */
 
 public class Rectangle {
+
   // напишите тут ваш код
-  private int top;
-  private int left;
+  private final int top;
+  private final int left;
   private int width;
   private int height;
 
@@ -37,5 +38,6 @@ public class Rectangle {
     this.height = height;
   }
 
-  public static void main(String[] args) {}
+  public static void main(String[] args) {
+  }
 }

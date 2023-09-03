@@ -9,6 +9,7 @@ import java.io.InputStreamReader;
 */
 
 public class Solution {
+
   public static void main(String[] args) throws IOException {
     BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
@@ -34,7 +35,8 @@ public class Solution {
   }
 
   public static class Cat {
-    private String name;
+
+    private final String name;
     private Cat father;
     private Cat mother;
 
@@ -50,9 +52,9 @@ public class Solution {
 
     @Override
     public String toString() {
-      if (mother == null && father != null ) {
+      if (mother == null && father != null) {
         return "The cat's name is " + name + ", no mother, father is " + father.name;
-      } else if (father == null && mother !=null) {
+      } else if (father == null && mother != null) {
         return "The cat's name is " + name + ", mother is " + mother.name + " no father";
       } else if (father == null && mother == null) {
         return "The cat's name is " + name + ", no mother, no father";

@@ -9,6 +9,7 @@ import java.io.InputStreamReader;
 */
 
 public class Solution {
+
   public static void main(String[] args) throws IOException {
     // напишите тут ваш ко
     int[] arr = new int[15];
@@ -25,9 +26,10 @@ public class Solution {
         streetOdd += arr[i];
       }
     }
-    if (streetEven > streetOdd)
+    if (streetEven > streetOdd) {
       System.out.println("В домах с четными номерами проживает больше жителей.");
-    else if (streetOdd > streetEven)
+    } else if (streetOdd > streetEven) {
       System.out.println("В домах с нечетными номерами проживает больше жителей.");
+    }
   }
 }

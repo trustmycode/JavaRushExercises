@@ -9,6 +9,7 @@ import java.io.InputStreamReader;
 */
 
 public class Solution {
+
   public static void main(String[] args) throws Exception {
     int[] array = initializeArray();
     int max = max(array);
@@ -29,7 +30,9 @@ public class Solution {
     // найди максимальное значение
     int max = Integer.MIN_VALUE;
     for (int i = 0; i < array.length; i++) {
-      if (array[i] > max) max = array[i];
+      if (array[i] > max) {
+        max = array[i];
+      }
     }
     return max;
   }

@@ -5,12 +5,13 @@ package com.javarush.task.task05.task0517;
 */
 
 public class Cat {
+
   // напишите тут ваш код
   private String name;
-  private int age;
-  private int weight;
+  private final int age;
+  private final int weight;
   private String address;
-  private String color;
+  private final String color;
 
   public Cat(String name) {
     this.name = name;
@@ -46,5 +47,6 @@ public class Cat {
     this.address = address;
   }
 
-  public static void main(String[] args) {}
+  public static void main(String[] args) {
+  }
 }

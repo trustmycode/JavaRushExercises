@@ -9,6 +9,7 @@ import java.util.ArrayList;
 */
 
 public class Solution {
+
   public static void main(String[] args) throws Exception {
     // Считать строки с консоли и объявить ArrayList list тут
     BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));

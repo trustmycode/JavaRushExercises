@@ -5,6 +5,7 @@ package com.javarush.task.task05.task0526;
 */
 
 public class Solution {
+
   public static void main(String[] args) {
     // напишите тут ваш код
     Man man1 = new Man("Man1", 23, "Moscow");
@@ -19,9 +20,10 @@ public class Solution {
 
   // напишите тут ваш код
   public static class Man {
-    private String name;
-    private int age;
-    private String address;
+
+    private final String name;
+    private final int age;
+    private final String address;
 
     public Man(String name, int age, String address) {
       this.name = name;
@@ -31,9 +33,10 @@ public class Solution {
   }
 
   public static class Woman {
-    private String name;
-    private int age;
-    private String address;
+
+    private final String name;
+    private final int age;
+    private final String address;
 
     public Woman(String name, int age, String address) {
       this.name = name;

@@ -5,6 +5,7 @@ package com.javarush.task.task05.task0527;
 */
 
 public class Solution {
+
   public static void main(String[] args) {
     Mouse jerryMouse = new Mouse("Jerry", 12, 5);
     Cat tomCat = new Cat("Tom", 10, 5);
@@ -12,6 +13,7 @@ public class Solution {
   }
 
   public static class Mouse {
+
     String name;
     int height;
     int tail;
@@ -24,9 +26,10 @@ public class Solution {
   }
 
   public static class Cat {
-    private String name;
-    private int maxSpeed;
-    private int strength;
+
+    private final String name;
+    private final int maxSpeed;
+    private final int strength;
 
     public Cat(String name, int maxSpeed, int strength) {
       this.name = name;
@@ -36,9 +39,10 @@ public class Solution {
   }
 
   public static class Dog {
-    private String name;
-    private int maxSpeed;
-    private int strength;
+
+    private final String name;
+    private final int maxSpeed;
+    private final int strength;
 
     public Dog(String name, int maxSpeed, int strength) {
       this.name = name;

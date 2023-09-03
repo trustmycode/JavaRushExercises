@@ -10,6 +10,7 @@ import java.util.ArrayList;
 */
 
 public class Solution {
+
   public static void main(String[] args) throws IOException {
     // напишите тут ваш код
     ArrayList<String> strings = new ArrayList<>();
@@ -18,8 +19,11 @@ public class Solution {
     int stSizeMin = Integer.MAX_VALUE;
     for (int i = 0; i < 10; i++) {
       strings.add(i, reader.readLine());
-      if (strings.get(i).length() > stSizeMax) stSizeMax = strings.get(i).length();
-      else if (strings.get(i).length() < stSizeMin) stSizeMin = strings.get(i).length();
+      if (strings.get(i).length() > stSizeMax) {
+        stSizeMax = strings.get(i).length();
+      } else if (strings.get(i).length() < stSizeMin) {
+        stSizeMin = strings.get(i).length();
+      }
     }
     for (int i = 0; i < strings.size(); i++) {
       if (strings.get(i).length() == stSizeMax) {

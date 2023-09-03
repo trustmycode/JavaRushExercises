@@ -5,6 +5,7 @@ package com.javarush.task.task05.task0510;
 */
 
 public class Cat {
+
   // напишите тут ваш код
   public String name;
   public int weight;

@@ -8,6 +8,7 @@ import java.util.Map;
 */
 
 public class Solution {
+
   public static void main(String[] args) {
     Map<String, Object> map = new HashMap<>();
     map.put("Sim", 5);

@@ -7,6 +7,7 @@ import java.util.ArrayList;
 */
 
 public class Solution {
+
   public static void main(String[] args) {
     ArrayList<String> strings = new ArrayList<String>();
     strings.add("роза");
@@ -23,7 +24,7 @@ public class Solution {
     for (int i = 0; i < strings.size(); i++) {
       if (strings.get(i).contains("р") && strings.get(i).contains("л")) {
       } else if (strings.get(i).contains("л")) {
-        strings.add(i,strings.get(i));
+        strings.add(i, strings.get(i));
         i++;
       } else if (strings.get(i).contains("р")) {
         strings.remove(i);

@@ -5,8 +5,9 @@ package com.javarush.task.task06.task0611;
 */
 
 public class StringHelper {
+
   public static String multiply(String text) {
-    String result = new String();
+    String result = "";
     for (int i = 0; i < 5; i++) {
       result = text;
     }
@@ -15,12 +16,13 @@ public class StringHelper {
   }
 
   public static String multiply(String text, int count) {
-    String result = new String();
+    String result = "";
     for (int i = 0; i < count; i++) {
       result = text;
     }
     return result;
   }
 
-  public static void main(String[] args) {}
+  public static void main(String[] args) {
+  }
 }

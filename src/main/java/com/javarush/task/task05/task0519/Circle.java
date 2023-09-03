@@ -5,10 +5,11 @@ package com.javarush.task.task05.task0519;
 */
 
 public class Circle {
+
   // напишите тут ваш код
-  private int centerX;
-  private int centerY;
-  private int radius;
+  private final int centerX;
+  private final int centerY;
+  private final int radius;
   private int width;
   private int color;
 
@@ -33,5 +34,6 @@ public class Circle {
     this.color = color;
   }
 
-  public static void main(String[] args) {}
+  public static void main(String[] args) {
+  }
 }

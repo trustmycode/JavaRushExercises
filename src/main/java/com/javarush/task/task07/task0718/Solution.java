@@ -10,6 +10,7 @@ import java.util.ArrayList;
 */
 
 public class Solution {
+
   public static void main(String[] args) throws IOException {
     // напишите тут ваш код
     BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));

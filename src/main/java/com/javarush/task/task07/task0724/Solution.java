@@ -5,6 +5,7 @@ package com.javarush.task.task07.task0724;
 */
 
 public class Solution {
+
   public static void main(String[] args) {
     // напишите тут ваш код
     Human human1 = new Human("Имя", true, 20);
@@ -16,18 +17,19 @@ public class Solution {
     Human human7 = new Human("Имя", true, 20, human1, human2);
     Human human8 = new Human("Имя", true, 20, human1, human2);
     Human human9 = new Human("Имя", true, 20, human1, human2);
-    System.out.println(human1.toString());
-    System.out.println(human2.toString());
-    System.out.println(human3.toString());
-    System.out.println(human4.toString());
-    System.out.println(human5.toString());
-    System.out.println(human6.toString());
-    System.out.println(human7.toString());
-    System.out.println(human8.toString());
-    System.out.println(human9.toString());
+    System.out.println(human1);
+    System.out.println(human2);
+    System.out.println(human3);
+    System.out.println(human4);
+    System.out.println(human5);
+    System.out.println(human6);
+    System.out.println(human7);
+    System.out.println(human8);
+    System.out.println(human9);
   }
 
   public static class Human {
+
     // напишите тут ваш код
     String name;
     boolean sex;
