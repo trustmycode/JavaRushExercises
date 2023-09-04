@@ -1,7 +1,9 @@
 package com.javarush.task.task08.task0818;
 
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.Map;
+import java.util.Map.Entry;
 
 /*
 Только для богачей
@@ -25,14 +27,11 @@ public class Solution {
   }
 
   public static void removeItemFromMap(Map<String, Integer> map) {
-    Map<String, Integer> copyMap = new HashMap<>();
-    for (Map.Entry<String, Integer> entry : map.entrySet()) {
-      if (entry.getValue() < 500) {
-        copyMap.put(entry.getKey(), entry.getValue());
+    for (Iterator<Entry<String, Integer>> it = map.entrySet().iterator(); it.hasNext(); ) {
+      int val = it.next().getValue();
+      if (val < 500) {
+        it.remove();
       }
-    }
-    for (Map.Entry<String, Integer> entry : copyMap.entrySet()) {
-      map.remove(entry.getKey());
     }
   }
 
